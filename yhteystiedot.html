@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Yhteystiedot | Team Laamat</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <meta name="author" content="Tanja Korolainen" />
+    <meta
+      name="keywords"
+      content="Koiraharrastus, Keski-Suomi, Team Laamat, Yhteystiedot, Vastuuhenkilöt"
+    />
+    <meta
+      name="description"
+      content="Keskisuomalaisen koirayhdistyksen yhteystiedot"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      @media only screen and (min-width: 551px) and (max-width: 1024px) {
+      .teksti-item {
+        max-width: 40%;
+      }}
+      @media only screen and (max-width: 551px){
+        #liity{
+          order: -1;
+        }
+      }
+    </style>
+
+    <!-- mobiilinavigoinnin mahdollistava js-funktio -->
+    <script>
+      function menuFunction() {
+        var x = document.getElementById("topnav");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </head>
+
+  <body id="alku">
+    <!-- logo + banneri, kumpi näkyy riippuu näytön koosta -->
+    <header>
+      <a href="index.html">
+        <img
+          src="kuvat/banneriMV.jpg"
+          alt="Banneri"
+          width="1000"
+          id="banneri"
+        />
+        <img
+          src="kuvat/logo-pieni.jpg"
+          alt="Team Laamat logo"
+          width="100"
+          id="logo"
+        />
+      </a>
+    </header>
+
+    <!-- navigointi -->
+    <nav id="topnav" class="navbar">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="esittely.html"> Team Laamat</a></li>
+        <li><a href="toiminta.html"> Toiminta</a></li>
+        <li><a class="active" href="yhteystiedot.html"> Yhteystiedot</a></li>
+        <li id="etsi"><label for="etsikentta">Etsi: </label><input id="etsikentta" type="text" size="12"></li>
+      </ul>
+    </nav>
+    <a href="javascript:void(0);" class="menu" onclick="menuFunction()"
+      ><em class="fa fa-navicon"></em
+    ></a>
+    
+<!-- sisältö -->
+    <main class="container1">
+      <!--Vastuuhenkilöiden esittely-->
+      <aside class="teksti-item">
+        
+        <h2>Vastuuhenkilöt</h2>
+        <ul>
+          <li>
+            <a href="arki.html" id="arki">Arki&shy;tottelevaisuus</a><br />
+            Tanja Kortelainen, puh: 000000000, <br />Reetta Koivisto, puh:
+            00000000000
+          </li>
+          <li>
+            <a href="palveluskoira.html#haku" id="hakuvastuu">Haku</a><br />
+            Nelly Jaatinen, puh: 00000000
+          </li>
+          <li>
+            <a href="palveluskoira.html#jalki" id="jalkivastuu">Jälki</a><br />
+            Anniina Metsonen: 000000000
+          </li>
+          <li>
+            <a href="toko.html" id="tokovastuu">Toko</a><br />
+            Veera Rahkonen: 000000000
+          </li>
+          <li>
+            <a href="rally.html" id="rallyvastuu">Rallytoko</a><br />
+            Julia Järvenpää: 0000000000
+          </li>
+        </ul>
+      </aside>
+      <!-- kuinka liittyä jäseneksi -->
+      <article class="teksti-item" style="flex-grow: 2;" id="liity">
+        <h1>Näin liityt jäseneksi</h1>
+        <p>
+          Jos haluat liittyä Team Laamojen jäseneksi, laita viestiä
+          sähköposti&shy;osoitteeseen <span style="color: lightgrey;">teamlaamat (at) gmail.com</span>, 
+          kerro yhteystietojesi
+          lisäksi vähän itsestäsi ja koirastasi sekä mistä lajeista olisit
+          mahdollisesti kiinnostunut. Sihteerimme on sinuun tämän jälkeen
+          yhteydessä ja sopii kanssasi ns. koetreeneistä, joissa pääset
+          tutustumaan yhdistyksen muihin jäseniin ja haluamaasi lajiin.
+          Halutessasi koetreenien jälkeen yhä liittyä jäseneksi saat jäsenmaksun
+          ohjeistuksen ja sinut liitetään WhatsApp-ryhmään.
+        </p>
+        <p>
+          Koetreeneillä varmistetaan se, että yhdistyksen yhteishenki pysyy
+          hyvänä ja koirien kohtelu on eettistä ja hyvien tapojen mukaista
+          kaikilla jäsenillämme kaikissa tilanteissa. Jos sinulla on kysymyksiä
+          lajeihin liittyen, kannattaa olla suoraan yhteydessä lajivastaaviin.
+        </p>
+      </article>
+      <!--hallituksen esittely-->
+      <aside class="teksti-item" style="max-width: 100%;">
+        <h2>Hallitus</h2>
+        <ul>
+          <li><i>Puheenjohtaja:</i><br> Emma Laitinen, puh: 123 9813568</li>
+          <li><i>Vara&shy;puheenjohtaja:</i> <br> Essi Huovinen, puh: 982 078501394</li>
+          <li>
+            <i>Sihteeri:</i> <br> Julia Järvenpää, puh: 983 1083570</li>           
+          <li>
+            <i>Jäsenet:</i><br>Tanja Kortelainen<br>Anniina Metsonen
+            </li>
+          <li>
+            <i>Varajäsenet:</i><br>
+            Veera Rahkonen<br>
+            Tuomas Hallikainen</li>
+        </ul>
+        <p>Sähköpostiosoitteet ovat muotoa etunimi.sukunimi at laamat.fi
+        </p>
+      </aside>
+    </main>
+
+    <footer>
+      <p>
+        Team Laamat <br />
+        Jyväskylä <br>
+        Kuvat &copy; Tanja Korolainen
+      </p>
+      <p>
+        Viimeisin päivitys <br />
+        xx. xx. xxxx
+      </p>
+      <p>
+        <a href="#alku">Sivun alkuun</a>
+      </p>
+  </footer>
+  </body>
+</html>

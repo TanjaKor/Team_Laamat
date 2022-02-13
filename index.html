@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Team Laamat | Etusivu</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <meta name="author" content="Tanja Korolainen" />
+    <meta
+      name="keywords"
+      content="Koiraharrastus, Keski-Suomi, Palveluskoira, Toko, Rallytoko, Koira, Team Laamat"
+    />
+    <meta
+      name="description"
+      content="Keskisuomalaisen koirayhdistyksen kotisivut"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- tablettinäkymän taustakuva -->
+    <style>
+     
+      @media only screen and (min-width: 551px) and (max-width: 1024px) {
+        body {
+          background-image: url(kuvat/LateNoutaa_1_edited.jpg);
+          background-size: cover;
+        }
+             }
+      @media only screen and (max-width: 551px){
+        #etusivun-teksti{
+          order: -1;
+        }
+      }
+
+    </style>
+
+    <!-- mobiilinavigoinnin mahdollistava js-funktio -->
+    <script>
+      function menuFunction() {
+        var x = document.getElementById("topnav");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </head>
+
+  <body id="alku">
+    <!-- logo + banneri, kumpi näkyy riippuu näytön koosta -->
+    <header>
+      <a href="index.html">
+        <img
+          src="kuvat/banneriMV.jpg"
+          alt="Banneri"
+          width="1000"
+          id="banneri"
+        />
+        <img
+          src="kuvat/logo-pieni.jpg"
+          alt="Team Laamat logo"
+          width="100"
+          id="logo"
+        />
+      </a>
+    </header>
+
+    <!-- navigointi -->
+    
+    <nav id="topnav" class="navbar">
+      <ul>
+        <li><a class="active" href="index.html">Etusivu</a></li>
+        <li><a href="esittely.html"> Team Laamat</a></li>
+        <li><a href="toiminta.html"> Toiminta</a></li>
+        <li><a href="yhteystiedot.html"> Yhteystiedot</a></li>
+        <li id="etsi"><label for="etsikentta">Etsi: </label><input id="etsikentta" type="text" size="12"></li>
+      </ul>
+   </nav>
+   
+        
+    <a href="javascript:void(0);" class="menu" onclick="menuFunction()"
+      ><em class="fa fa-navicon"></em
+    ></a>
+    
+<!-- sisältö -->
+    <main class="container2">
+       <!-- Kuva -->
+        <div class="kuva-sivulla" id="kuva1">
+          <img src="kuvat/Etusivu_kuva1_edited.jpg" alt="Koira esineruudussa" />
+        </div>
+        <!-- Esittelyteksti -->
+        <article class="teksti-item" id="etusivun-teksti">
+          <h1>Tervetuloa Team Laamojen kotisivuille!</h1>
+          <p>
+            Olemme koiraharrastamisen yhdistys Jyväskylässä, toimimme
+            Jyväskylän, Uuraisten ja Laukaan alueella. Kanssamme pääset
+            turvallisesti aloittamaan harrastamisen, olit sitten kokenut
+            koiranomistaja tai vasta harkitsemassa pennun ostoa. Tavoitteenamme
+            on jakaa tietoa vastuullisesta harrastamisesta ja mahdollistaa
+            koiraharrastaminen niin aloittelijoille kuin arvokisatasolla
+            kisaajille.
+          </p>
+
+          <p>
+            Tutustu meihin tarkemmin
+            <a href="esittely.html"><strong>täällä</strong></a>.<br>Lajien vastuuhenkilöihin
+            pääset tutustumaan <a href="yhteystiedot.html#vastuut"><strong>täältä</strong></a
+            >.
+          </p>
+        </article>
+        <!-- Kuva -->
+        <div class="kuva-sivulla" id="kuva2">
+          
+          <img
+            src="kuvat/Etusivu_kuva2_1_edited.jpg"
+            alt="Koirakko perusasennossa"
+          />
+        </div>
+    </main>
+
+    <footer>
+      <p>
+        Team Laamat<br />
+        Jyväskylä<br>
+        Kuvat &copy; Tanja Korolainen
+      </p>
+      <p>
+        Viimeisin päivitys<br />
+        xx. xx. xxxx
+      </p>
+      <p>
+        <a href="#alku">Sivun alkuun</a>
+      </p>
+  </footer>
+  </body>
+</html>

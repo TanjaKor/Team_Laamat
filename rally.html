@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Rally-toko | Team Laamat</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <meta name="author" content="Tanja Korolainen" />
+    <meta
+      name="keywords"
+      content="Koiraharrastus, Keski-Suomi, Rallytoko, Harrastuskoira, Team Laamat"
+    />
+    <meta name="description" content="Team Laamojen rallytoko-sivut" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      @media only screen and (max-width: 1024px) {
+        .esittely,
+        .vastuuhenkilot,
+        .teksti-item {
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .esittely {
+          order: -1;
+        }
+      }
+    </style>
+
+    <!-- mobiilinavigoinnin mahdollistava js-funktio -->
+    <script>
+      function menuFunction() {
+        var x = document.getElementById("topnav");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </head>
+
+  <body id="alku">
+    <!-- logo + banneri, kumpi näkyy riippuu näytön koosta -->
+    <header>
+      <a href="index.html">
+        <img
+          src="kuvat/banneriMV.jpg"
+          alt="Banneri"
+          width="1000"
+          id="banneri"
+        />
+        <img
+          src="kuvat/logo-pieni.jpg"
+          alt="Team Laamat logo"
+          width="100"
+          id="logo"
+        />
+      </a>
+    </header>
+
+    <!-- navigointi -->
+    <nav id="topnav" class="navbar">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="esittely.html"> Team Laamat</a></li>
+        <li><a class="active" href="toiminta.html"> Toiminta</a></li>
+        <li><a href="yhteystiedot.html"> Yhteystiedot</a></li>
+        <li id="etsi"><label for="etsikentta">Etsi: </label><input id="etsikentta" type="text" size="12"></li>
+      </ul>
+    </nav>
+    <!-- alinavigointi -->
+    <nav class="alinavigointi">
+      <ul>
+        <li><a href="arki.html">Arki&shy;tottelevaisuus</a></li>
+        <li><a href="palveluskoira.html">Palveluskoira&shy;lajit</a></li>
+        <li><a href="toko.html">Toko</a></li>
+        <li><a class="active2" href="rally.html">Rally-toko</a></li>
+      </ul>
+    </nav>
+
+    <a href="javascript:void(0);" class="menu" onclick="menuFunction()"
+      ><em class="fa fa-navicon"></em
+    ></a>
+
+    <!--sisältö-->
+    <main class="container1" style="flex-wrap: nowrap">
+      <!-- Vastuuhenkilöt -->
+      <section class="teksti-item vastuuhenkilot">
+        <h2>Rally-tokon vastuu&shy;henkilö:</h2>
+        <ul>
+          <li><a href="yhteystiedot.html#rallyvastuu">Julia Järvenpää</a></li>
+        </ul>
+        <p>
+          Katso rally-toko treenit
+          <a href="toiminta.html#ajankohtaista">täältä</a>.
+        </p>
+
+        <p>
+          Muistathan, että treenivuorot ovat vain
+          <a href="yhteystiedot.html#liity">jäsenille!</a>
+        </p>
+        <figure>
+          <img src="kuvat/rallykyltti.png" alt="rally-tokon kyltti" />
+          <figcaption>
+            Rallytokon virallinen kyltti nro 15 (&copy;: Suomen
+            Rally-tokoyhdistys)
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- esittely -->
+      <article class="esittely">
+        <h1>Rally-toko on matalan kynnyksen harrastus</h1>
+        <p>
+          Rally-toko on vielä suhteellisen uusi harrastusmuoto Suomessa, mutta
+          se on nopeasti saanut harrastajia, sillä alimmissa luokissa on lupa
+          käyttää sanallisten ohjeiden lisäksi käsivihjeitä ja kehua koiraa
+          toisin kuin perinteisimmissä lajeissa. Rally-tokossa suoritetaan ns.
+          rata, joka muodostuu radan muodon mukaan asetelluista kylteistä,
+          joiden kuvaama liike suoritetaan. Radan suorittaminen ajastetaan, eli
+          oikein tehtyjen liikkeiden lisäksi myös ajalla on merkitystä.
+        </p>
+        <figure>
+          <img src="kuvat/kierto.jpg" alt="Ohjaajaa kiertävä koira" />
+          <figcaption>Rally-tokossa on nimensä mukaisesti vauhtia</figcaption>
+        </figure>
+        <p>
+          Rally-tokon hauskuus piilee siinä, että erityisesti alimmassa luokassa
+          pilkuntarkkaa teknistä suorittamista ei vaadita ja kokeessa saa
+          halutessaan auttaa koiraa ns. käsivuilla (eli esim. osoittaa maata,
+          jos haluaa koiran asettuvan maahan). Myös koiran kannustaminen ja
+          kehuminen kesken liikkeiden ja radan on sallittua ja jopa toivottavaa,
+          josta taas tokossa ja palveluskoiralajeissa menee pisteitä. Myös
+          rally-tokossa on useampia luokkia, jotka vaikeutuvat eteenpäin
+          mentäessä. Alimpien luokkien rento meininki ja löyhät säännöt
+          liikkeiden suorittamisen suhteen (suhteessa tokoon) on mahdollistanut
+          lajin nopean kasvun, sillä kynnys osallistua kokeisiin on
+          tarkoituksellisesti matalampi.
+        </p>
+        <p>
+          Rally-tokossa ei ole koiran niveliä tai muita rakenteita suuresti
+          kuormittavia liikkeitä, vaikkakin ylemmissä luokissa koiralta
+          vaaditaan kehonhallintaa erilaisten pyörähdysten ja käännösten myötä.
+          Tämän vuoksi laji on erityisen hyvä vanhemmillekin koirille.
+        </p>
+        <p>
+          Rally-tokossa kilpaillaan neljässä luokassa: alokas, avoin, voittaja ja
+          mestari. Lue lisää rally-tokosta
+          <a href="http://www.rally-toko.fi/sivusto/" target="_blank"
+          title="Rally-tokoyhdistys"> <span>täältä</span></a
+          >.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <p>
+        Team Laamat <br />
+        Jyväskylä <br />
+        Kuvat &copy; Tanja Korolainen
+      </p>
+      <p>
+        Viimeisin päivitys <br />
+        xx. xx. xxxx
+      </p>
+      <p>
+        <a href="#alku">Sivun alkuun</a>
+      </p>
+    </footer>
+  </body>
+</html>

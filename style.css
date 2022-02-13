@@ -1,0 +1,369 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  margin: 5% 10% 5% 10%;
+  font-family: "Merriweather Sans", sans-serif;
+  text-align: center;
+  background-color: #f1f1ef;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul {
+  padding-left: 0px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  background-color: #c19434;
+  border-radius: 5px;
+  padding: 10px;
+  width: 10em;
+  text-align: center;
+  display: inline-block;
+}
+
+.active {
+  background-color: #34421e;
+}
+
+nav li{
+  display: inline-block;
+  }
+
+nav a:hover {
+  background-color: #34421e;
+  color: white;
+}
+
+.alinavigointi li a{
+  background-color: #34421e;
+  margin: 0px 5px 4px 5px;
+  padding: 5px;
+}
+
+.active2{
+  display: none;
+  }
+
+.alinavigointi a:hover{
+  font-size: larger;
+  font-weight: bolder;
+}
+
+div img, figure img {
+  width: 100%;
+  border-radius: 2em;
+}
+
+
+a {
+  color: white;
+  font-weight: bold;
+}
+
+span {
+  color: #c19434;
+}
+
+
+main a:hover {
+  background-color: #f1f1ef;
+  color: black;
+}
+
+.container1, .container2 {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: flex-start;
+  margin-top: 4px;
+}
+
+.kuvat-sivuilla {
+  border-radius: 2em;
+
+}
+
+.teksti-item {
+  
+  padding: 1.5%;
+  background-color: #34421e99;
+  border-radius: 2em;
+  text-align: center;
+  margin: 2px;
+}
+
+.teksti-videolla{
+  width: 100%;
+  padding: 1.5%;
+  background-color: #34421e99;
+  border-radius: 2em;
+  text-align: center;
+  margin: 2px;
+  }
+
+.toimintateksti,
+.toimintateksti2 {
+  padding: 1.5%;
+  background-color: #34421e;
+  border-radius: 2em;
+  text-align: center;
+  margin: 2px;
+}
+
+aside li {
+  padding: 15px;
+}
+
+.n-item:hover {
+  background-color: #c19434;
+  color: black;
+}
+
+#banneri {
+  width: 100%;
+}
+
+.kuva-sivulla {
+  border-radius: 2em;
+  margin-top: 2px;
+}
+video {
+  width: 100%;
+  border-radius: 2em;
+}
+
+iframe{
+  width: 100%;
+  border-radius: 2em;
+}
+
+figcaption {
+  font-size: smaller;
+  font-style: italic;
+}
+
+.vastuuhenkilot{
+  width: 25%;
+}
+
+.esittely{
+  width: 75%;
+  padding: 1.5%;
+  background-color: #34421e99;
+  border-radius: 2em;
+  text-align: center;
+  margin: 2px;
+  }
+
+footer {
+  display: flex;
+  flex-shrink: 0;
+  color: #34421e;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1ef;
+  border-radius: 10px;
+  padding: 2%;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+footer a {
+  color: #34421e;
+  text-decoration: none;
+}
+
+footer a:hover {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .container1, .container2 {
+    flex-direction: column;
+    align-items: center;
+    min-width: 155px;
+  }
+
+  .kuvat-sivuilla,
+  .kuva-sivulla {
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  .teksti-item,
+  .toimintateksti,
+  .toimintateksti2, 
+  .teksti-videolla,
+  .esittely {
+    width: 100%;
+    background-color: #34421e;
+    padding: 2%;
+    margin: 2px;    
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .responsive {
+    display: block;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+  }
+
+  a.menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    color: black;
+    font-size: 2em;
+  }
+
+  #topnav ul {
+    padding-left: 5px;
+  }
+
+  #topnav li {
+    list-style-type: none;
+    text-align: left;
+    font-size: 1.3em;
+    margin: 2px 0px;
+  }
+
+  #kuva2 {
+    display: none;
+  }
+  #banneri {
+    display: none;
+  }
+  footer{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+   #etsi{
+     display: none;
+   }
+  
+   .vainisoruutu{
+     display: none;
+   }
+
+   }
+
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
+  
+  #logo {
+    display: none;
+  }
+  .container1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  a.menu {
+    display: none;
+  }
+
+  nav li a{
+    margin: 3px;
+    width: 8em;
+  }
+
+  .teksti-item, .teksti-videolla, .esittely {
+    background-color: #34421e;
+    }
+
+  .teamlaamat-item{
+    width: 45%
+  }
+  
+  #kuva2{
+   min-width: 200px;
+ }
+
+  .kuvat-sivuilla {
+    width: 40%;
+  }
+
+  #kuva1 {
+    display: none;
+  }
+  #esineruutu{
+    width: 100%;
+  }
+  #etsi{
+    display: none;
+  }
+
+  .vainisoruutu{
+    display: none;
+  }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+  #logo {
+    display: none;
+  }
+  a.menu {
+    display: none;
+  }
+
+  body {
+    background-image: url(kuvat/LateNoutaa_1_edited.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+  }
+
+  .toimintateksti2 {
+    background-color: #34421e99;
+    width: 25%;
+  }
+
+  .toimintateksti {
+    background-color: #34421e99;
+    width: 75%;
+  }
+  .toiminta-jarjestys{
+    flex-direction: row-reverse;
+  }
+
+  .teamlaamat-item{
+    width: 50%;
+  }
+
+  .vastuuhenkilot{
+    order: -1;
+  }
+  .piilossa{
+    display: none;
+  }
+  #etsikentta{
+    position: relative;
+    float: right;
+    }
+
+  #kuva1, #kuva2{
+    min-width: 200px;
+  }
+
+  .piilossa {
+    display: none;
+  }
+   }

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Toiminta | Team Laamat</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <meta name="author" content="Tanja Korolainen" />
+    <meta
+      name="keywords"
+      content="Harrastuskoira, Keski-Suomi, Palveluskoiralajit, Toko, Rallytoko, 
+      Arkitottelevaisuus, Koiraharrastukset, Team Laamat, Lajit"
+    />
+    <meta
+      name="description"
+      content="Team-Laamojen toiminnan esittely"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+   <!-- mobiilinavigoinnin mahdollistava js-funktio -->
+    <script>
+      function menuFunction() {
+        var x = document.getElementById("topnav");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </head>
+
+  <body id="alku">
+    <!-- logo + banneri, kumpi näkyy riippuu näytön koosta -->
+    <header>
+      <a href="index.html">
+        <img
+          src="kuvat/banneriMV.jpg"
+          alt="Banneri"
+          width="1000"
+          id="banneri"
+        />
+        <img
+          src="kuvat/logo-pieni.jpg"
+          alt="Team Laamat logo"
+          width="100"
+          id="logo"
+        />
+      </a>
+    </header>
+
+    <!-- navigointi -->
+    <nav id="topnav" class="navbar">
+        <ul>
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="esittely.html"> Team Laamat</a></li>
+          <li><a class="active" href="toiminta.html"> Toiminta</a></li>
+          <li><a href="yhteystiedot.html"> Yhteystiedot</a></li>
+          <li id="etsi"><label for="etsikentta">Etsi: </label><input id="etsikentta" type="text" size="12"></li>
+        </ul>
+      </nav>
+    <!-- alinavigointi -->
+    <nav class="alinavigointi">
+        <ul>
+          <li><a href="arki.html">Arki&shy;tottelevaisuus</a></li>
+          <li><a href="palveluskoira.html">Palveluskoira&shy;lajit</a></li>
+          <li><a href="toko.html">Toko</a></li>
+          <li><a href="rally.html">Rally-toko</a></li>
+        </ul>
+      </nav>
+
+    <a href="javascript:void(0);" class="menu" onclick="menuFunction()"
+      ><em class="fa fa-navicon"></em
+    ></a>
+<!-- sisältö -->
+    <main>
+      <!--1. containeri (2 ekaa boxia)-->
+      <div class="container1">
+        
+        <!-- Esittelyteksti -->
+        <article class="toimintateksti">
+          <h1>Toiminta ja uutiset</h1>
+          <p>
+            Tällä sivulla näet ajankohtaiset tapahtumat, jotka ovat avoimia
+            kaikille jäsenillemme sekä muutamia vinkkejä harrastamisen
+            aloittamiseksi koirasi kanssa. Team laamoissa on mahdollista
+            treenata arkitottelevaisuutta, palveluskoiralajeja (pk-lajit),
+            tokoa (tottelevaisuus&shy;koe) sekä rally-tokoa. Lisää lajeista näet
+            klikkaamalla yläpuolelta sinua kiinnostavaa lajia.
+          </p>
+          <figure>
+          <img src="kuvat/Kontaktia_vahvistava.jpg" alt="Kontaktissa oleva koirakko">
+          <figcaption>Yhteistyön vahvistaminen on hauskaa sekä koiran, että ohjaajan puolelta</figcaption>
+          </figure>      
+        </article>
+            
+        <!-- Ajankohtaista -->
+        <aside class="toimintateksti2" id="ajankohtaista">
+          <h2>Ajankohtaista</h2>
+          <p>
+            Treenipaikat ja tarkemmat ohjeet jaetaan jäsenien WhatsApp-ryhmässä.<br>
+            Koulutukset ja muut tapahtumat vain jäsenille, kokeet ovat kaikille
+            avoimia.
+          </p>
+          <ul>
+            <li>
+             <a href="palveluskoira.html#haku">Haku</a><br>
+             ryhmätreeni 13.5.2021 klo 18:00
+              alkaen
+            </li>
+            <li>
+              <a href="arki.html">Tottelevaisuus&shy;treenit</a><br>
+              4.4.2021 klo 16:00 alkaen
+            </li>
+            <li>
+              <b>Hyppytekniikka&shy;koulutus</b><br>
+              29.-30.5.2021<br>
+              <a href="yhteystiedot.html#liity">Liity jäseneksi</a> osallistuaksesi
+            </li>
+            <li>
+              <b>Team Laamojen vuosikokous ja treenipäivä</b><br>20.3.2021<br>
+              <a href="yhteystiedot.html#liity">Liity jäseneksi</a> osallistuaksesi
+            </li>
+            <li>
+              <b>Jälkikoe</b><br> 27.5.2021<br>
+              Etusija jäsenillä, ylimääräiseksi jääneet
+              paikat voidaan täyttää yhdistyksen ulkopuolisilla koirakoilla.<br>
+              Ilmoittaudu 
+              <a href="https://www.virkku.net/index.cfm?template=search.cfm&type=kokeet" target="_blank"
+              title="Virkku.net">
+                <span>täällä</span></a>.
+              
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!-- Vinkkejä harrastukseen,2. containeri (1 laatikko kahden ekan alla) -->
+      <div class="container1">
+      <aside class="teksti-item" style="width: 100%">
+        <h3>Vinkkejä harrastamiseen</h3>
+        <ul>
+          <li>
+            Tutustu koiraasi: innostuuko se enemmän pomppivasta pallosta vai
+            suoraviivaisesti poispäin lentävästä pallosta? / tykkääkö se
+            enemmän jahdata frisbeetä kuin syödä nakkia palkaksi?
+          </li>
+          <li>
+            Kontakti ja ns aktiivisuus omistajaa (eli ohjaajaa) kohtaan
+            kannattaa lähteä rakentamaan jo ihan pienestä pennusta alkaen! Älä
+            siis houkuttele koiraasi toimintaan, vaan odota sen
+            tarjoavan jotain aktiivisuutta (aluksi pelkkä kohti tuleminen tai
+            sinua katsominen riittää) ja palkkaa siitä todella runsaasti. Tätä
+            taitoa tulet tarvitsemaan tulevaisuudessa paljon! Tutustu
+            aktiivisuuteen lisää 
+            <a href="https://sporttirakki.fi/2018/04/20/tunneyhteyden-luominen-koiran-ja-ohjaajan-valille/" 
+            target="_blank" title="Sporttirakki-sivusto">
+              <span>täällä</span></a> 
+              ja kysy kanssatreenaajil&shy;tasi vinkkejä taidon kehittämiseksi
+            eteenpäin.
+          </li>
+          <li>
+            Tarjoa jo pennullesi mahdollisuus kehittää itseluottamusta
+            antamalla sen voittaa lelun leikkihetkissä. Jos tavoitteenasi on
+            harrastaa kisatasolla, anna koirasi olla välillä röyhkeä (tee
+            itsellesi ja perheellesi kuitenkin rajat mitä et enää halua
+            vahvistaa). Näin saat koirastasi itsevarman ja se uskaltaa kohdata
+            tulevaisuuden haasteet ja ongelmat rohkeammin ja
+            ennakkoluulot&shy;tomammin.
+          </li>
+          <li>
+            Juttele rohkeasti harrastajien kanssa ja pyydä apua treeneissä /
+            WhatsApp-ryhmässä. Tulet varmasti saamaan lähes yhtä monta
+            erilaista neuvoa kuin on vastaajiakin, joten ihan kaikkea muiden
+            sanomaa ei kuitenkaan tarvitse pitää ainoana totuutena. Roomaan on
+            monta tietä ja niistä on valittava se, joka tuntuu itselle ja
+            koirallesi sopivimmalta, mutta ole kuitenkin ennakkoluuloton ja
+            muista kunnioittaa myös muiden tapoja viedä koiraansa eteenpäin.
+            Muista, että jokainen koira on yksilö, joten se mikä ei toimi
+            sinulla voi hyvinkin toimia jonkun muun koiran kanssa ja sama
+            toisinpäin!
+          </li>
+        </ul>
+      </aside>
+    </div>
+    </main>
+
+    <footer>
+      <p>
+        Team Laamat <br />
+        Jyväskylä <br>
+        Kuvat &copy; Tanja Korolainen
+      </p>
+      <p>
+        Viimeisin päivitys <br />
+        xx. xx. xxxx
+      </p>
+      <p>
+        <a href="#alku">Sivun alkuun</a>
+      </p>
+  </footer>
+  </body>
+</html>

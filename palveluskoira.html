@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Palveluskoiralajit | Team Laamat</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <meta name="author" content="Tanja Korolainen" />
+    <meta
+      name="keywords"
+      content="Koiraharrastus, Keski-Suomi, Palveluskoira, Harrastuskoira,
+           Team Laamat, Pk-jälki, Metsäjälki, Henkilöhaku, Pk-haku, Haku, Esineruutu"
+    />
+    <meta
+      name="description"
+      content="Team Laamojen palveluskoiralajien sivut"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      .sivunsisainen li,
+      .sivunsisainen a {
+        margin: 5px;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+      }
+      .container1 {
+        align-items: stretch;
+      }
+
+      ul.sticky {
+        margin: auto;
+        position: sticky;
+        top: 0;
+        background-color: #34421e;
+        padding: 8px;
+      }
+
+      @media only screen and (max-width: 830px) {
+        .esittely,
+        .vastuuhenkilot,
+        .teksti-item {
+          width: 100%;
+        }
+      }
+
+      @media only screen and (min-width: 830px) and (max-width: 1024px) {
+        .container1 {
+          flex-wrap: nowrap;
+        }
+      }
+      @media only screen and (min-width: 500px) and (max-width: 1024px) {
+        .vastuuhenkilot {
+          order: -1;
+        }
+      }
+    </style>
+
+    <!-- mobiilinavigoinnin mahdollistava js-funktio -->
+    <script>
+      function menuFunction() {
+        var x = document.getElementById("topnav");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </head>
+
+  <body id="alku">
+    <!-- logo + banneri, kumpi näkyy riippuu näytön koosta -->
+    <header>
+      <a href="index.html">
+        <img
+          src="kuvat/banneriMV.jpg"
+          alt="Banneri"
+          width="1000"
+          id="banneri"
+        />
+        <img
+          src="kuvat/logo-pieni.jpg"
+          alt="Team Laamat logo"
+          width="100"
+          id="logo"
+        />
+      </a>
+    </header>
+
+    <!-- navigointi -->
+    <nav id="topnav" class="navbar">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="esittely.html"> Team Laamat</a></li>
+        <li><a class="active" href="toiminta.html"> Toiminta</a></li>
+        <li><a href="yhteystiedot.html"> Yhteystiedot</a></li>
+        <li id="etsi"><label for="etsikentta">Etsi: </label><input id="etsikentta" type="text" size="12"></li>
+      </ul>
+    </nav>
+    
+
+    <!-- alinavigointi -->
+    <nav class="alinavigointi">
+      <ul>
+        <li><a href="arki.html">Arki&shy;tottelevaisuus</a></li>
+        <li>
+          <a class="active2" href="palveluskoira.html"
+            >Palveluskoira&shy;lajit</a
+          >
+        </li>
+        <li><a href="toko.html">Toko</a></li>
+        <li><a href="rally.html">Rally-toko</a></li>
+      </ul>
+    </nav>
+
+    <a href="javascript:void(0);" class="menu" onclick="menuFunction()"
+      ><em class="fa fa-navicon"></em
+    ></a>
+    
+    <!-- sisältö -->
+    <main>
+      <!--1. containeri, esittely ja vastuuhenkilöt-->
+      <div class="container1" style="flex-wrap: nowrap">
+        <!-- Esittelyteksti ja sivun sisäinen navi-->
+        <article class="esittely" id="esittely">
+          <h1>
+            Palveluskoira&shy;lajeissa koira pääsee toteuttamaan lajinomaisia
+            tarpeitaan
+          </h1>
+          <ul class="vainisoruutu sivunsisainen">
+            <li><a href="#haku">Henkilöhaku</a></li>
+            <li><a href="#jalki">Jälki</a></li>
+            <li><a href="#esineruutu">Esineruutu</a></li>
+          </ul>
+          <p>
+            Team Laamoissa pääset harrastamaan palvelukoiralajeista henkilöhakua
+            sekä metsäjälkeä. Muista palveluskoiralajeista voit lukea
+            <a
+              href="https://www.palveluskoiraliitto.fi/lajit/palveluskoirakoelajit.html"
+              target="_blank" title="Palveluskoiraliitto"><span>täältä</span></a
+            >. Kaikissa palveluskoiralajeissa (pois lukien vetolajit) on
+            yhteistä kokeen koostuminen kolmesta eri osioista, joista yksi on
+            aina tottelevaisuus. Palveluskoiralajit ovat olleet alun perin
+            työkoirien ominaisuuksia mittaavia kokeita, jonka vuoksi kokeet ovat
+            monilta osin koiralle fyysisesti raskaita ja vaativat hyvän teknisen
+            taidon lisäksi hyvää fyysistä kuntoa. Palveluskoiralajeja
+            harrastetaan 3:ssa eri vaikeustasolla, eli luokissa, joista 1-luokka
+            on helpoin ja 3-luokka haastavin. Pk-kokeisiin voi osallistua vain
+            pk-oikeudet omaavat rodut, lue lisää
+            <a
+              href="https://www.palveluskoiraliitto.fi/lajit/palveluskoirarodut.html"
+              target="_blank"><span>palveluskoiraliiton</span></a
+            >
+            sivuilta.
+          </p>
+
+          <p>
+            Palveluskoiralajeissa koiran ja ohjaajan yhteistyö korostuu ja ilman
+            hyvää koira-omistajasuhdetta kokonaisen kolmiosaisen kokeen
+            suorittaminen hyväksytysti on lähes mahdotonta, sillä suoritukset
+            ovat pitkiä eikä koiraa saa palkata niiden aikana. Lajeihin
+            treenattaessa tarvitaan pitkäjänteisyyttä ja koiran on oikeasti
+            nautittava tehtävistä, jotta työskentely näyttää kokeessa
+            tuomarinkin silmään innokkaalta ja iloiselta. Palveluskoiralajien
+            harrastaminen tarjoaa koiralle lajinomaista tekemistä, sillä
+            lajeihin liittyy aina jokin nenätyöskentelyä vaativa osuus ja
+            innokkaan koesuorituksen aikaansaamiseksi palkkauksessa olisi hyvä
+            käyttää leikkiä pelkän ruoan sijaan. Näin koira saa toteuttaa myös
+            <a href="esittely.html#peto">metsästyskäyttäytymistään</a>
+            harjoittelun edetessä. Maastotreenit tekevät hyvää myös omistajille,
+            sillä metsähän on tunnetusti hyvä paikka rentoutua ja purkaa
+            stressiä!
+          </p>
+        </article>
+        <!-- Vastuuhenkilöt -->
+        <section class="teksti-item vastuuhenkilot">
+          <h2>Palvelus&shy;koiralajien vastuu&shy;henkilöt:</h2>
+          <ul>
+            <li>
+              Haku: <a href="yhteystiedot.html#hakuvastuu">Nelly Jaatinen</a>
+            </li>
+            <li>
+              Jälki: <a href="yhteystiedot.html#jalkivastuu">Anniina Metsonen</a>
+            </li>
+          </ul>
+          <p>
+            Katso palveluskoiralajien treenit ja koulutukset
+            <a href="toiminta.html#ajankohtaista">täältä</a>
+          </p>
+
+          <p>
+            Muistathan, että treenivuorot ovat vain
+            <a href="yhteystiedot.html#liity">jäsenille!</a>
+          </p>
+
+          <figure>
+            <img
+              src="kuvat/leeviseuraa.jpg"
+              alt="Seuraamista harjoitteleva koirakko"
+            />
+            <figcaption>Seuraaminen on palveluskoiralajeissa kisaajille erittäin tärkeä taito</figcaption>
+          </figure>
+        </section>
+      </div>
+      <!--pienemmille näytöille sticky sisänavigaatio-->
+      <ul class="piilossa sticky sivunsisainen" style="font-size: smaller">
+        <li>
+          <a href="#haku"><i>Haku</i></a>
+        </li>
+        <li>
+          <a href="#jalki"><i>Jälki</i></a>
+        </li>
+        <li>
+          <a href="#esineruutu"><i>Esineruutu</i></a>
+        </li>
+      </ul>
+      <!--2. containeri, haku ja jälki-->
+      <div class="container1">
+        <article class="teksti-item" id="haku">
+          <h3>Haku</h3>
+          <p>
+            Hakukokeessa koiran tehtävänä on etsiä rajatulta ja ihmisten
+            tallomalta metsäalueelta (rata) kadonneita henkilöitä eli
+            maalimiehiä. Koira voi ilmaista löytämänsä maalimiehen joko haukulla
+            (koira jää maalimiehen luokse ja haukkuu tasaisesti niin kauan kun
+            ohjaaja saapuu koiran luokse) tai rullalla (koira ottaa kaulassaan
+            roikkuvan rullan suuhunsa löytäessään maalimiehen, juoksee se
+            suussaan ohjaajan luokse ja vie ohjaajan löytämänsä
+            henkilön luokse). Radan pituus vaihtelee 1-3
+            luokissa 100m-300m. Radan leveys on aina 100m. Radan keskellä kulkee
+            ns. keskilinja, josta ohjaaja ei saa poistua kuin koiran
+            ilmoittaessaan löydöstä.
+          </p>
+
+          <figure>
+            <img
+              src="kuvat/Hakukuva1.jpg"
+              alt="Hakua opetteleva koira"
+            />
+            <figcaption>Ensimmäisissä hakutreeneissä koira saa palkan maalimieheltä heti löydön yhteydessä</figcaption>
+          </figure>
+
+          <p>
+            Haussa koiralta vaaditaan vauhtia (kokeessa on aikaraja), tarkkuutta
+            sekä itsevarmuutta. Koirakon kannalta haku
+            on palkitseva laji, sillä siinä vaaditaan molemminpuolista
+            luottamusta. Haun treenaamisessa treeniporukan yhteishenki on
+            äärimmäisen tärkeää, sillä usein maalimies palkkaa koiran löydöstä
+            tai ilmaisusta ilman ohjaajaa. Hyvässä porukassa hakumetsässä voi
+            kulua tunteja ja se voi tuntua vain hujaukselta.
+          </p>
+        </article>
+
+        <article class="teksti-item" id="jalki">
+          <h3>Jälki</h3>
+          <div>
+            <p>
+            Jälkikokeessa koiran tehtävä on löytää ja jäljestää metsämaastoon
+            kuljettu jälki ja ilmaista jäljelle jätetyt kepit. Keppien
+            ilmaisutyyli on vapaa, mutta yleisimpiä ovat maahan meneminen (keppi
+            jää etujalkojen väliin), kepin tuominen ohjaajalle tai kepin
+            tuijottaminen. Jäljen pituus määräytyy luokan mukaan pidentyen joka
+            luokassa. Kokeessa tuomari arvioi koiran tarkkuutta löytää jälki
+            (ns. janatyöskentely) kahden merkin välistä sekä löydettyjen keppien
+            määrän mukaan.</p>
+
+            <figure style="text-align: center">
+              <video autoplay muted style="max-width: 250px">
+                <source src="kuvat/jalkivideo.mp4" type="video/mp4" />
+                <source src="kuvat/jalkivideo.ogg" type="video/ogg" />
+                Your browser does not support the video tag.
+              </video>
+              <figcaption><i>Jäljestystä harjoitteleva koira</i></figcaption>
+            </figure>
+          </div>
+
+          <p>
+            Jälki on helppo harrastus myös yksin tehtäväksi eikä se vaadi
+            juurikaan välineitä. Lisäksi jäljestäminen on hyvin luontaista
+            suurimmalle osalle koirista rodusta huolimatta, joten suurin osa
+            koirista pitää jäljestämisestä todella paljon. Jälkitreeneissä
+            pääsee ihmettelemään koiran nenän tarkkuutta, kun se yhä löytää
+            lähes askeltarkasti yli tunninkin vanhan jäljen ja pystyy
+            ilmaisemaan ulkonäöltään mihin tahansa paksumpaan oksaan
+            verrattavissa olevan ihmisen hajuisen kepin. Jälki on helppo tapa
+            väsyttää todella aktiivista koiraa ja saada koiran stressitasoja
+            näin laskettua.
+          </p>
+        </article>
+      </div>
+      <!--3. containeri, esineruutu ja kuvitukuva-->
+      <div
+        class="container1"
+        style="justify-content: center; align-items: flex-start"
+      >
+        <article class="teksti-item" id="esineruutu" style="flex-shrink: 2">
+          <h3>Esineruutu</h3>
+          <p>
+            Esineruutu on kolmas kokeen osa-alue sekä hakukokeessa että
+            jälkikokeessa. Esineruudussa koiran tehtävä on löytää tietty määrä
+            ihmisen hajuisia esineitä tallatulta 50x50m kokoiselta
+            metsäalueelta. Esineet voivat olla mitä tahansa vauvan sukista
+            muovirasioiden kansiin. Ohjaaja ei saa liikkua kokeessa ruudun
+            sisäpuolelle, vaan pelkästään etureunassa. Koiran löytäessä esineen, sen tulee
+            tuoda se vauhdikkaasti ohjaajalle ja käskystä lähteä etsimään
+            seuraavaa. Pisteitä saa löydetyistä esineistä ja koiran
+            ohjattavuudesta (lähteekö koira ohjaajan osoittamaan suuntaan,
+            irrottaako ensimmäisellä käskyllä esineestä luovuttaessaan sitä
+            ohjaajalle jne). Kokeissa esineruudussa on myös
+            aikaraja, joten koiran tulee liikkua vauhdikkaasti.
+          </p>
+
+          <p>
+            Esineruutu on hauska ja helppo aktivointikeino ihan sellaisenaan. Et
+            tarvitse muuta kuin erilaisia ihmisenhajuisia esineitä ja pienen
+            alueen metsää. Esineruutu on jäljen ohella toinen erittäin hyvä
+            keino väsyttää helposti aktiivinen tai stressaantunut koira; tässä
+            lajissa koira saa liikettä epätasaisessa maastossa ja joutuu
+            käyttämään nenäänsä.
+          </p>
+        </article>
+        <figure>
+          <img src="kuvat/metsassa.jpg" alt="Koirakko yhdessä metsässä" />
+        </figure>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Team Laamat <br />
+        Jyväskylä <br />
+        Kuvat &copy; Tanja Korolainen
+      </p>
+      <p>
+        Viimeisin päivitys <br />
+        xx. xx. xxxx
+      </p>
+      <p>
+        <a href="#alku">Sivun alkuun</a>
+      </p>
+    </footer>
+  </body>
+</html>

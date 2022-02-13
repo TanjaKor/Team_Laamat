@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Esittely | Team Laamat</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <meta name="author" content="Tanja Korolainen" />
+    <meta
+      name="keywords"
+      content="Koiraharrastus, Keski-Suomi, Koira, Yhdessä treenaaminen, Treeniseura, Team Laamat"
+    />
+    <meta
+      name="description"
+      content="Team Laamojen esittely"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+
+      figure img{
+        width: 70%;
+      }
+      
+    </style>
+
+    <!-- mobiilinavigoinnin mahdollistava js-funktio -->
+    <script>
+      function menuFunction() {
+        var x = document.getElementById("topnav");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </head>
+
+  <body id="alku">
+    <!-- logo + banneri, kumpi näkyy riippuu näytön koosta -->
+    <header>
+      <a href="index.html">
+        <img
+          src="kuvat/banneriMV.jpg"
+          alt="Banneri"
+          width="1000"
+          id="banneri"
+        />
+        <img
+          src="kuvat/logo-pieni.jpg"
+          alt="Team Laamat logo"
+          width="100"
+          id="logo"
+        />
+      </a>
+    </header>
+
+    <!-- navigointi -->
+    <nav id="topnav" class="navbar">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a class="active" href="esittely.html"> Team Laamat</a></li>
+        <li><a href="toiminta.html"> Toiminta</a></li>
+        <li><a href="yhteystiedot.html"> Yhteystiedot</a></li>
+        <li id="etsi"><label for="etsikentta">Etsi: </label><input id="etsikentta" type="text" size="12"></li>
+      </ul>
+    </nav>
+    <a href="javascript:void(0);" class="menu" onclick="menuFunction()"
+      ><em class="fa fa-navicon"></em
+    ></a>
+ <!-- sisältö -->
+    <main class="container1 toiminta-jarjestys">
+             <!-- Esittely -->
+        <article class="teksti-item teamlaamat-item">
+          <h1>Ketä Team Laamat ovat?</h1>
+          <p>
+            Team Laamat on syntynyt harrastajien tarpeesta löytää kannustavaa,
+            osallistuvaa ja toisia arvostavaa treeniseuraa rotu- ja lajirajojen
+            ylitse. Treenikentillä Team Laaman jäsenet ovat kaikki saman
+            arvoisia kokemuksesta huolimatta ja kaikki osallistuvat treeneihin
+            aktiivisesti. Muiden mielipiteitä arvostetaan, mutta ei kuitenkaan
+            hyssytellä tai unohdeta perimmäistä tarkoitusta: kehittyminen ja
+            oppiminen. Kaikissa treeneissä osallistujien toivotaan seuraavan
+            suorittavia koirakkoja ja auttamaan kanssatreenajia aktiivisesti ja
+            kunnioittaen.
+          </p>
+
+          <figure><img src="kuvat/Tiimihuppari.jpg" alt="Team Laamat tiimihuppari">
+          <figcaption>Jokainen jäsen saa oman tiimihupparin</figcaption></figure>
+
+          <p>
+            Jäsenille on perustettu WhatsApp ryhmä, jossa voi huudella
+            treeniseuraa, kysyä apua ja vaihtaa kuulumisia. Team Laamat
+            järjestävät vähintään kerran vuodessa jäsenille yhteisen
+            tapahtumapäivän treenaamisen ja illanvieton parissa. Team Laamojen
+            arvoihin kuuluvat koiran turvallisuudesta huolehtiminen,
+            yhteishengen vaaliminen, avoin keskustelu, kannustaminen ja toisten
+            auttaminen. Pääset tarkemmin tutustumaan toimijoihimme
+            <a href="yhteystiedot.html#vastuut">täältä</a>
+          </p>
+        </article>
+
+        <!-- Miksi harrastaa -->
+        <article class="teksti-item teamlaamat-item" >
+          <h2>Miksi harrastaisin koirani kanssa?</h2>
+          <p>
+            Harrastaminen koiran kanssa lisää koiran hyvinvointia sekä
+            fyysisesti, että henkisesti sekä parantaa koiran ja omistajan
+            välistä suhdetta. Kaikki harrastaminen perustuu
+            koira-omistajasuhteelle, jota rakennetaan, kehitetään ja
+            ylläpidetään koko koiran elämän ajan. Hyvä suhde mahdollistaa
+            paremman hallinnan treenikenttien lisäksi myös arjessa, kun koira
+            luottaa omistajaansa ja siihen, että hän toimii aina reilusti ja
+            oikeudenmukaisesti. Hyvä koira-omistajasuhde tekee koiran kanssa
+            touhuamisesta hauskempaa, sillä hyvä suhde tarkoittaa myös sitä,
+            että <q>tunnette</q> koirasi kanssa toisenne. Koirasi osaa lukea sinun
+            viestejäsi oikein ja ennakoida toimintaansa sekä toisin päin.
+            Laamoissa harrastaminen ei ole pelkkää <q>temppujen</q> opettamista
+            koiralle, vaan pohdimme myös syvempiä syy-seuraussuhteita koiran
+            käytökselle ja mahdollisille ongelmatilanteille ja korostamme
+            harjoittelussa pohjatyön, eli suhteen, merkitystä.
+          </p>
+
+          <figure><img src="kuvat/VetavaKoira.jpg" alt="Omistajaa vetävä koira"/></figure>
+
+          <p id="peto">
+            Koira on perimmäiseltä luonteeltaan peto, saalistaja. Näin ollen
+            kaikilla koirilla on sisäsyntyinen toimintaketju, jota kutsutaan
+            metsästyketjuksi. Lue lisää metsästyskäyttäy&shy;tymisestä
+            <a href="https://dogscent.fi/blog/koiran-kayttaytymistarpeet/" 
+            target="_blank" title="Koirakoulu Dogscent">
+              <span>täältä</span></a
+            >. Joillain roduilla ketjun tiettyjä osia on haluttu korostaa ja
+            toisia loiventaa, alkuperäisen käyttötarkoituksen mukaisesti. Tämä
+            ei kuitenkaan poista sitä, että jokaisella koirayksilölla on
+            olemassa lajinomaiset tarpeensa, joihin myös metsästyskäyttäy&shy;tyminen
+            kuuluu. Näiden tarpeiden laiminlyönti aiheuttaa usein ongelmia
+            koiran käyttäytymisessä ja aiheuttaa koiralle turhaa stressiä (lue
+            lisää koiran stressistä
+            <a
+              href="https://www.masseter.fi/artikkelit/hyvinvointi/stressi-vahvistaa-ja-heikentaa.html"
+            target="_blank" title="Koirakoulu Masseter">
+              <span>täällä</span></a
+            >. Harrastamalla koirasi kanssa opit tuntemaan koirasi tarpeet ja
+            tarjoat samalla koirallesi sen kaipaamaa aktivointia, joka taas
+            vähentää koirasi stressiä ja siitä tulee tyytyväisempi koirakaveri
+            olit sitten tavoitteellinen kisaaja tai metsälenkkeilijä.
+          </p>
+
+          <p>
+            Harrastamisen koiran kanssa voi aloittaa missä vaiheessa tahansa.
+            Treenit suhteutetaan aina koirakon (koira + ohjaaja) tason
+            mukaiseksi. Muut treenaajat ovat aktiivisesti mukana harjoitusten
+            suunnittelussa, jos ohjaajana et osaa vielä itse päättää mikä olisi
+            parasta teille juuri nyt. <br><br><em>Muistathan kuitenkin, että koira ei välitä
+            tavoitteista tai kisamenestyksestä, sille on tärkeintä, että se
+            pääsee toteuttamaan omia tarpeitaan sinun kanssasi</em>.
+          </p>
+        </article>
+    </main>
+
+    <footer>
+      <p>
+        Team Laamat <br />
+        Jyväskylä <br>
+        Kuvat &copy; Tanja Korolainen
+      </p>
+      <p>
+        Viimeisin päivitys <br />
+        xx. xx. xxxx
+      </p>
+      <p>
+        <a href="#alku">Sivun alkuun</a>
+      </p>
+  </footer>
+  </body>
+</html>

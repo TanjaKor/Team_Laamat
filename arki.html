@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Arkitottelevaisuus | Team Laamat</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <meta name="author" content="Tanja Korolainen" />
+    <meta name="keywords" 
+          content="Koiraharrastus, Keski-Suomi, Palveluskoira, Arkitottelevaisuus,
+          Bh-koe, Koira, Team Laamat"/>
+    <meta name="description" content="Team Laamojen arkitottelevaisuuden sivut"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap"
+      rel="stylesheet" />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <style>
+      @media only screen and (max-width: 1024px) {
+        .esittely, .vastuuhenkilot, .teksti-item {
+          width: 100%;}
+                }
+      @media only screen and (max-width: 500px) {
+        .esittely{
+          order: -1;}
+        }
+    </style>
+
+     <!-- mobiilinavigoinnin mahdollistava js-funktio -->
+    <script>
+      function menuFunction() {
+        var x = document.getElementById("topnav");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </head>
+
+  <body id="alku">
+    <!-- logo + banneri, kumpi näkyy riippuu näytön koosta -->
+    <header>
+      <a href="index.html"
+        >
+          <img src="kuvat/banneriMV.jpg"
+          alt="Banneri"
+          width="1000"
+          id="banneri"/>
+          <img
+          src="kuvat/logo-pieni.jpg"
+          alt="Team Laamat logo"
+          width="100" 
+          id="logo"/>
+          </a>
+    </header>
+
+    <!-- navigointi -->
+    <nav id="topnav" class="navbar">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="esittely.html"> Team Laamat</a></li>
+        <li><a class="active" href="toiminta.html"> Toiminta</a></li>
+        <li><a href="yhteystiedot.html"> Yhteystiedot</a></li>
+        <li id="etsi"><label for="etsikentta">Etsi: </label><input id="etsikentta" type="text" size="12"></li>
+      </ul>
+    </nav>
+    
+    <!-- alinavigointi -->
+    <nav class="alinavigointi">
+      <ul>
+        <li><a class="active2" href="arki.html">Arki&shy;tottelevaisuus</a></li>
+        <li><a href="palveluskoira.html">Palveluskoira&shy;lajit</a></li>
+        <li><a href="toko.html">Toko</a></li>
+        <li><a href="rally.html">Rally-toko</a></li>
+      </ul>
+    </nav>
+
+    <a href="javascript:void(0);" class="menu" onclick="menuFunction()"
+      ><em class="fa fa-navicon"></em
+    ></a>
+
+<!--sisältö-->
+<main class="container1" style="flex-wrap: nowrap;">
+    <!-- Vastuuhenkilöt -->
+    <section class="teksti-item vastuuhenkilot">
+      <h2>Arki&shy;tottelevaisuuden vastuu&shy;henkilöt:</h2>
+      <ul>
+        <li><a href="yhteystiedot.html#arki">Tanja Kortelainen</a></li>
+        <li><a href="yhteystiedot.html#arki">Reetta Koivisto</a></li>
+      </ul>
+      <p>
+        Katso aiheeseen liittyvät koulutukset 
+        <a href="toiminta.html#ajankohtaista">täältä</a>
+      </p>
+
+      <p>
+        Muistathan, että treenivuorot ovat vain <a href="yhteystiedot.html#liity">jäsenille!</a>          
+      </p>
+      <iframe src="https://www.youtube.com/embed/g9kRXegGcEA?controls=0">
+    </iframe>
+    </section>
+
+    <!-- esittely -->
+    <article class="esittely">
+      <h1>Arkitotte&shy;levaisuus on välttämätön taito!</h1>
+      <p>
+        Jokaisen koiran olisi hyvä hallita ainakin luotettava luoksetulo,
+        jonkinlainen pysähtymiskäsky sekä kontaktin (katsekontakti) ottaminen
+        omistajaan. Lisäksi elämää helpottaa se, että koira antaa käsitellä
+        itseään (harjaus, pesut, korvien puhdistus ja kynsien leikkaaminen)
+        sekä kotona että muualla vieraiden toimesta (eläinlääkäri).
+        Arkitreeneissä on mahdollisuus opetella näitä taitoja turvallisesti.
+        Lisäksi arkitottelevaisuus treeneissä ja -koulutuksissa halukkaat
+        voivat keskittyä myös käyttäytymisko&shy;keen eli BH-kokeen harjoitteluun.</p>
+
+      <p> BH-koe on pakollinen ennen <a href="palveluskoira.html">palveluskoiralajien</a> 
+        kokeisiin osallistumista. Kokeeseen ovat tervetulleita kaikki rodut sekä 
+        sekarotuiset, kunhan koira on rekisteröity Suomen Kennelliittoon ja rokotettu 
+        ohjeiden mukaisesti. BH-kokeen tarkoitus on osoittaa, että
+        koira on ohjaajan hallinnassa eikä se ole vaaraksi itselleen tai
+        ympäristölleen. Koe koostuu kahdesta osasta: tottelevaisuudesta ja
+        kaupunkiosuudesta. </p> 
+
+      <figure><img src="kuvat/paikkis.jpg" alt="paikallaan makaavat koirat">
+        <figcaption>Koiran olisi hyvä olla hallinnassa myös muiden koirien 
+          lähellä.<br>&copy; Satu Nyberg</figcaption> </figure> 
+
+      <p>Tottelevaisuusosas&shy;sa kaksi koirakkoa suorittaa
+        koetta yhtä aikaa: toinen koira suorittaa ns. kaaviota ja toinen on
+        samaanaikaan maassa (ns paikkamakuu) ohjaajan ollessa kauempana selin
+        koiraan. Tottelevaisuuskaa&shy;vioon kuuluu seuraaminen eri nopeuksilla ja
+        käännöksillä (koira kulkee ohjaajan vasemmalla puolella, pitäen
+        kontaktia koko ajan ohjaajaan), liikkeestä maahanmeno ja istuutuminen
+        (koira jää kävelystä joko maahan tai istumaan käskystä, kun ohjaaja
+        jatkaa matkaansa eteenpäin) sekä luoksetulo.</p>
+        
+      <p>Kaupunkiosuudessa tuomari
+        tarkkailee koiran reaktioita ihmisryhmiin, vieraisiin koiriin sekä
+        autoihin ja pyöriin. Koira ei saa osoittaa aggressiivisuutta missään
+        vaiheessa koetta. Lue lisää BH-kokeesta
+        <a
+          href="https://www.palveluskoiraliitto.fi/lajit/palveluskoirakoelajit/kayttaytymiskoe-bh.html"
+          target="_blank" title="Palveluskoiraliitto"><span>täältä</span></a
+        >
+        Arkitottelevaisuus treenejä pidetään siis vaihtelevissa ympäristöissä
+        riippuen osallistujien tavoitteista. Joku kerta treenit sovitaan
+        vaikka kaupan pihaan ja harjoitellaan muiden koirien ohituksia /
+        ihmisten ohittamista kauniisti. Seuraavalla kerralla treenit voivat
+        olla treenikentällämme, jossa voi harjoitella luoksetuloa häiriöstä
+        tai vaikka BH-kokeen seuruukaviota. Treenit suunnitellaan etukäteen
+        WhatsApp-ryhmässä osallistujien kesken.
+      </p>
+    </article>
+    </main>
+
+    <footer>
+        <p>
+          Team Laamat <br />
+          Jyväskylä <br>
+          Kuvat &copy; Tanja Korolainen
+        </p>
+        <p>
+          Viimeisin päivitys <br />
+          xx. xx. xxxx
+        </p>
+        <p>
+          <a href="#alku">Sivun alkuun</a>
+        </p>
+    </footer>
+  </body>
+</html>

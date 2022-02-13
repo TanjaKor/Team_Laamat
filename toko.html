@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Toko | Team Laamat</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <meta name="author" content="Tanja Korolainen" />
+    <meta
+      name="keywords"
+      content="Koiraharrastus, Keski-Suomi, Toko, Tottelevaisuuskoe,
+          Harrastuskoira, Team Laamat"
+    />
+    <meta name="description" content="Team Laamojen tokosivut" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      @media only screen and (max-width: 1024px) {
+        .esittely, .vastuuhenkilot, .teksti-item {
+          width: 100%;}
+                }
+      @media only screen and (max-width: 500px) {
+        .esittely{
+          order: -1;}
+        }
+    </style>
+
+
+    <!-- mobiilinavigoinnin mahdollistava js-funktio -->
+    <script>
+      function menuFunction() {
+        var x = document.getElementById("topnav");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </head>
+
+  <body id="alku">
+    <!-- logo + banneri, kumpi näkyy riippuu näytön koosta -->
+    <header>
+      <a href="index.html">
+        <img
+          src="kuvat/banneriMV.jpg"
+          alt="Banneri"
+          width="1000"
+          id="banneri"
+        />
+        <img
+          src="kuvat/logo-pieni.jpg"
+          alt="Team Laamat logo"
+          width="100"
+          id="logo"
+        />
+      </a>
+    </header>
+
+    <!-- navigointi -->
+    <nav id="topnav" class="navbar">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="esittely.html"> Team Laamat</a></li>
+        <li><a class="active" href="toiminta.html"> Toiminta</a></li>
+        <li><a href="yhteystiedot.html"> Yhteystiedot</a></li>
+        <li id="etsi"><label for="etsikentta">Etsi: </label><input id="etsikentta" type="text" size="12"></li>
+      </ul>
+    </nav>
+    <!-- alinavigointi -->
+    <nav class="alinavigointi">
+      <ul>
+        <li><a href="arki.html">Arki&shy; tottelevaisuus</a></li>
+        <li><a href="palveluskoira.html">Palveluskoira&shy;lajit</a></li>
+        <li><a class="active2" href="toko.html">Toko</a></li>
+        <li><a href="rally.html">Rally-toko</a></li>
+      </ul>
+    </nav>
+
+    <a href="javascript:void(0);" class="menu" onclick="menuFunction()"
+      ><em class="fa fa-navicon"></em
+    ></a>
+
+    <!--sisältö-->
+    <main class="container1" style="flex-wrap: nowrap">
+      <!-- Vastuuhenkilöt -->
+      <section class="teksti-item vastuuhenkilot">
+        <h2>Tokon vastuu&shy;henkilö:</h2>
+        <ul>
+          <li><a href="yhteystiedot.html#tokovastuu">Veera Rahkonen</a></li>
+        </ul>
+        <p>
+          Katso toko-koulutukset
+          <a href="toiminta.html#ajankohtaista">täältä</a>.
+        </p>
+
+        <p>
+          Muistathan, että treenivuorot ovat vain
+          <a href="yhteystiedot.html#liity">jäsenille!</a>
+        </p>
+        <figure><img src="kuvat/Toko.jpg" alt="Koira tokon seuraamisessa"> 
+          <figcaption>Tokon seuraamisessa koira ei saisi koskettaa ohjaajaa</figcaption> </figure>
+        
+      </section>
+
+      <!-- esittely -->
+      <article class="esittely">
+        <h1>Toko&shy;kokeeseen kaikki koirakot ovat tervetulleita</h1>
+        <p>
+          Toko, eli tottelevaisuuskoe, on koemuoto, johon
+          kaikki tunnistemerkatut ja rokotetut koirat ovat tervetulleita.
+          Kokeessa arvioidaan lajin nimen mukaisesti koiran ja ohjaajan kykyä
+          suorittaa annettuja tottelevaisuus&shy;tehtäviä. Tokokokeessa ei ole
+          olemassa ennaltamääriteltyä kaaviota vaan jokaisessa luokassa on
+          määritelty liikkeet (eli tehtävät), jotka luokassa suoritetaan, mutta
+          niiden järjestys on jokaisessa kokeessa
+          erilainen. Tokossa ei ole koiran fysiikan kannalta haastavia tehtäviä,
+          sillä jokaisessa luokassa oleva hyppy suhteutetaan koiran korkeuteen
+          ja noutokapulat ovat kevyitä.
+          </p>
+          <figure>
+            <video style="max-width: 250px" autoplay muted controls>
+              <source src="kuvat/tokokoe.mp4" type="video/mp4" />
+              <source src="kuvat/tokokoe.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+            <figcaption><i>Tokokokeen liikkeestä maahan&shy;menoliike</i></figcaption>
+          </figure>
+          <p>
+            Tokossa korostuu koiran ilo ja tekninen osaaminen. Tokossa kilpaillaan neljässä luokassa: alokas (ALO), avoin
+          (avo), voittaja (voi) ja erikoisvoittaja (evl). Lue lisää tokosta 
+          <a href="https://www.palveluskoiraliitto.fi/lajit/tottelevaisuuskoe-toko.html" target="_blank"
+          title="Palveluskoiraliitto">
+            <span>täältä</span></a>.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <p>
+        Team Laamat <br />
+        Jyväskylä <br>
+        Kuvat &copy; Tanja Korolainen
+      </p>
+      <p>
+        Viimeisin päivitys <br />
+        xx. xx. xxxx
+      </p>
+      <p>
+        <a href="#alku">Sivun alkuun</a>
+      </p>
+  </footer>
+  </body>
+</html>
